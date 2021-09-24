@@ -12,7 +12,7 @@ In Tutorial 1, we create an AudioLatencyDemo, which is a GUI application. The co
 
 To create a console project, you should click **File -> New Project**
 <div  align="center">   
-<img src="./fig/projucer_create_new.png" width = "400" alt="projucer_open_example" align=center />
+<img src="./fig/projucer_create_new.png" width = "600" alt="projucer_open_example" align=center />
 </div>
 
 Then, 
@@ -26,8 +26,8 @@ Then,
 (4) Click **Create Project**.
 
 <div  align="center">  
-<img src="./fig/projucer_create_console.png" width = "400" alt="projucer_example" align=center />
-<img src="./fig/projucer_select_modules.png" width = "100" alt="projucer_example" align=center />
+<img src="./fig/projucer_create_console.png" width = "600" alt="projucer_example" align=center />
+<img src="./fig/projucer_select_modules.png" width = "150" alt="projucer_example" align=center />
 </div>
 
 After that, refer to Tutorial 1 for project configuration. 
