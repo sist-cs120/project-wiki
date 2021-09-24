@@ -44,26 +44,26 @@ Please follow the reference. In Step 4, choose **Desktop development with C++**.
 ### **4. Run the AudioLatencyDemo**
 - In the JUCE folder, execute Projucer.exe. You will see the GUI of it.
 <div  align="center">   
-<img src="./fig/projucer_home.png" width = "400" alt="projucer_home" align=center />
+<img src="./fig/projucer_home.png" width = "600" alt="projucer_home" align=center />
 </div>
 
 - Open AudioLatencyDemo. Click File -> Open Example -> Audio -> AudioLatencyDemo
 <div  align="center">   
-<img src="./fig/projucer_open_example.png" width = "400" alt="projucer_open_example" align=center />
+<img src="./fig/projucer_open_example.png" width = "600" alt="projucer_open_example" align=center />
 <br/>
 <br/>
-<img src="./fig/projucer_example.png" width = "400" alt="projucer_example" align=center />
+<img src="./fig/projucer_example.png" width = "600" alt="projucer_example" align=center />
 </div>
 
 - Select your exporter. (1)
 - Select ASIO audio API. (2-4)
 <div  align="center">   
-<img src="./fig/projucer_config.png" width = "400" alt="projucer_config" align=center />
+<img src="./fig/projucer_config.png" width = "600" alt="projucer_config" align=center />
 </div>
 
 - Open this project in your IDE.
 <div  align="center">   
-<img src="./fig/projucer_export.png" width = "400" alt="projucer_export" align=center />
+<img src="./fig/projucer_export.png" width = "600" alt="projucer_export" align=center />
 </div>
 
 - Now, the AudioLatencyDemo project is opened in VS. The dependencies of this project are  all configured, except the directory to ASIO SDK. If you compile it, an error will be reported,
@@ -74,15 +74,15 @@ Please follow the reference. In Step 4, choose **Desktop development with C++**.
 <img src="./fig/ASIO_VS_config.png" width = "600" alt="ASIO_VS_config" align=center />
 <br/>
 <br/>
-<img src="./fig/ASIO_VS_config_2.png" width = "400" alt="ASIO_VS_config_2" align=center />
+<img src="./fig/ASIO_VS_config_2.png" width = "600" alt="ASIO_VS_config_2" align=center />
 <br/>
 <br/>
-<img src="./fig/ASIO_VS_config_3.png" width = "400" alt="ASIO_VS_config_3" align=center />
+<img src="./fig/ASIO_VS_config_3.png" width = "600" alt="ASIO_VS_config_3" align=center />
 </div>
 
 - It is ready to compile the project. If the project is built successfully, following application will run and an icon of ASIO driver ( <img src="./fig/asio_driver_icon.png" width = "" alt="projucer_config" align=center /> ) will appear in the task bar.
 <div  align="center">   
-<img src="./fig/audio_latency_demo.png" width = "300" alt="audio_latency_demo" align=center />
+<img src="./fig/audio_latency_demo.png" width = "400" alt="audio_latency_demo" align=center />
 </div>
 
 - Click <img src="./fig/asio_driver_icon.png" width = "" alt="asio_driver_icon" align=center /> and enter the configuration UI. Select your preferred sound card. I select **C-MEDIA USB Audio Device** according to the UGREEN sound card adapter. This is the device you will use for the Project 2-4. 
