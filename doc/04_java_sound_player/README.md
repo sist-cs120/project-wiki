@@ -1,4 +1,4 @@
-# Write a Sine Wave Player
+# Write a Sine Wave Player with JAVA and JAsio
 
 In this document, our goal is 
 > To learn how to use JAsio library to write a sine wave player.
