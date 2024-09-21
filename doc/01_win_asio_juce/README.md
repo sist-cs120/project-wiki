@@ -15,7 +15,7 @@ There are three requirements.
 
 - Microsoft Visual Studio
 - ASIO Driver and SDK
-- JUCE Library and Projucer
+- JUCE Library and Projucer (v7.0.0, higher version no longer supports the construction of an AudioIODeviceCallback object, which is used in [Write a Sine Wave Player with JUCE](https://github.com/SIST1C407/ATNet/tree/main/doc/02_write_a_player))
 
 ---
 
