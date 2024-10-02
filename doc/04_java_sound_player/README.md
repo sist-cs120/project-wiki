@@ -1,58 +1,60 @@
 # Write a Sine Wave Player with JAVA and JAsio
 
-In this document, our goal is 
+In this document, our goal is
 > To learn how to use JAsio library to write a sine wave player.
 
 ---
+
 ## Create a Project
 
-You can use VsCode to create your project 
+You can use VsCode to create your project
 
 To create a new project, you should click **View -> command palette**
-<div  align="center">   
+<div  align="center">
 <img src="./figure/create_java_project1.png" width = "500" alt="projucer_open_example" align=center />
 </div>
 
-Then, enter keyword `java` 
+Then, enter keyword `java`
 
-(1) Select **create java project**. 
-<div  align="center">   
+(1) Select **create java project**.
+<div  align="center">
 <img src="./figure/create_java_project2.png" width = "500" alt="projucer_open_example" align=center />
 </div>
 
-(2) Select **No Building Tools**. 
-<div  align="center">   
+(2) Select **No Building Tools**.
+<div  align="center">
 <img src="./figure/create_java_project3.png" width = "500" alt="projucer_open_example" align=center />
 </div>
 
 (3) Name your project.
 
 The new java project is created
-<div  align="center">   
+<div  align="center">
 <img src="./figure/create_java_project4.png" width = "500" alt="projucer_open_example" align=center />
-</div> 
-
+</div>
 
 After that, copy the file **.classpath** and **.project** to the new project.
 
 Finally, copy the example code in **AudioHw.java** to **APP.java** of the project. Copy the file **Config.java** to `src` directory.
 
 ---
+
 ## Prepared
-JAsioHost consists of two parts. 
+
+JAsioHost consists of two parts.
 
 `JAsioHost.jar` is the usual encapsulation of the classes comprising the JAH Java library, and `jasiohost.dll` is the JAH interface to ASIO. The package of JAH is `com.synthbot.jasiohost`.
 
-1. Include `JAsioHost.jar` in your Java project. Make `jasiohost.dll` available to your project. This can be done in several ways:
-  (1) Move or copy the library to `C:\WINDOWS\system32`. This is the default search location for JNI libraries.
-  (2) Inform the JVM where the library is located. This can be done with, e.g. `java -Djava.library.path=C:\WINDOWS\system32`.
-
-   If the JVM cannot find the dll, an [UnsatisfiedLinkError](http://docs.oracle.com/javase/1.4.2/docs/api/java/lang/UnsatisfiedLinkError.html) exception will be thrown.
-
-2. Download the ASIO4ALL driver. (https://www.asio4all.org/)
+1. Install the ASIO4ALL driver. (<https://www.asio4all.org/>)
+2. Include `JAsioHost.jar` in your Java project. You can do this by adding the file `JAsioHost.jar` in repo to `<your java project source path>/lib`.
+3. Let java to find `jasiohost.dll` to support the operation of `loadLibrary` in `JAsioHost.jar`. If the JVM cannot find the dll, an [UnsatisfiedLinkError](https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/UnsatisfiedLinkError.html) exception will be thrown. This can be solved in several ways:
+   1. Move `jasiohost.dll` to some paths that java searches for. For example, paths in the `PATH` environment variable(Windows), or paths in the `LD_LIBRARY_PATH` environment variable(Linux). A common practice for this approach is adding the location of the `jasiohost.dll` to the environment variable.
+   2. Inform the JVM where the library is located. This can be done with, e.g. `java -Djava.library.path=<path of dll>`.
 
 ---
+
 ## Example
+
 ```Java
 //Sine wave
 private float phase = 0;
@@ -166,8 +168,9 @@ public void sampleRateDidChange(final double sampleRate) {
 }
 
 ```
-Run your java code using the sound card. The output is a sine wave sound. 
 
+Run your java code using the sound card. The output is a sine wave sound.
 
 ## Reference
-https://github.com/mhroth/jasiohost
+
+<https://github.com/mhroth/jasiohost>
